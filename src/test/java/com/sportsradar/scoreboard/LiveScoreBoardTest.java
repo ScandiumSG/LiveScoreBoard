@@ -1,10 +1,13 @@
 package com.sportsradar.scoreboard;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class LiveScoreBoardTest {
     private LiveScoreBoard board;
 
@@ -13,7 +16,7 @@ public class LiveScoreBoardTest {
      */
     @BeforeAll
     public void createScoreBoard() {
-        board = new LiveScoreBoard();
+        this.board = new LiveScoreBoard();
 
         assertTrue(this.board.GetScores().size() == 0);
 

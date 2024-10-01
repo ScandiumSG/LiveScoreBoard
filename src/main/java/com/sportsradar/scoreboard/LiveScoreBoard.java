@@ -15,8 +15,10 @@ public class LiveScoreBoard {
     }
 
     public ArrayList<Match> GetScores() {
+        ArrayList<Match> Scores = new ArrayList<Match>();
         //TODO: Implement functionality
-        return null;
+        
+        return Scores;
     }
 
     public void CloseMatch() {
