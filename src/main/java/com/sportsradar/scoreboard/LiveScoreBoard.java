@@ -14,6 +14,12 @@ public class LiveScoreBoard {
         //TODO: Implement functionality
     }
 
+    public Match GetMatchByHomeTeamName(String HomeTeamName) {
+        //TODO: Implement functionality
+
+        return null;
+    }
+
     public ArrayList<Match> GetScores() {
         ArrayList<Match> Scores = new ArrayList<Match>();
         //TODO: Implement functionality
@@ -21,7 +27,7 @@ public class LiveScoreBoard {
         return Scores;
     }
 
-    public void CloseMatch() {
-
+    public void CloseMatch(String HomeTeamName) {   
+        //TODO: Implement functionality
     }
 }

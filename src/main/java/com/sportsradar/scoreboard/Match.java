@@ -24,4 +24,9 @@ public class Match {
         return null;
     }
 
+    public String GetMatchName() {
+        //TODO: Implement this functionality
+        return null;
+    }
+
 }
