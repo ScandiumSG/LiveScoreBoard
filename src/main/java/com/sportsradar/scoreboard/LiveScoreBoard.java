@@ -27,13 +27,22 @@ public class LiveScoreBoard {
         // Make the list sorted based on time added/initalized
         Collections.reverse(Scores);
         
-        Scores.sort((m1, m2) -> 
+        // Sort the list
+        SortMatchesByScore(Scores);
+
+        return Scores;
+    }
+
+    /**
+     * Sort a ArrayList of Match objects by the combined score of the Home and Away teams. Uses inplace-sorting.
+     * @param ActiveMatches The ArrayList of Match objects to sort.
+     */
+    private void SortMatchesByScore(ArrayList<Match> ActiveMatches) {
+        ActiveMatches.sort((m1, m2) -> 
             (m2.GetMatchScore().get(0) + m2.GetMatchScore().get(1))
             -
             (m1.GetMatchScore().get(0) + m1.GetMatchScore().get(1))
         );
-
-        return Scores;
     }
 
     public void CloseMatch(String HomeTeamName) {   
