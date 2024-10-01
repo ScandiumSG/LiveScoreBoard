@@ -16,17 +16,20 @@ public class Match {
     }
 
     public void UpdateScore(Integer HomeTeamScore, Integer AwayTeamScore) {
-        //TODO: Implement this functionality
+        HomeScore = HomeTeamScore;
+        AwayScore = AwayTeamScore;
     }
 
     public ArrayList<Integer> GetMatchScore() {
-        //TODO: Implement this functionality
-        return null;
+        ArrayList<Integer> ScoreList = new ArrayList<Integer>();
+        ScoreList.add(HomeScore);
+        ScoreList.add(AwayScore);
+
+        return ScoreList;
     }
 
     public String GetMatchName() {
-        //TODO: Implement this functionality
-        return null;
+        return HomeTeamName;
     }
 
 }
