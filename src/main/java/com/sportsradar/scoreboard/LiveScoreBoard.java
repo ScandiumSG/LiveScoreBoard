@@ -23,6 +23,12 @@ public class LiveScoreBoard {
         ArrayList<Match> Scores = new ArrayList<Match>();
         //TODO: Implement functionality
 
+        Scores.addAll(LiveMatches.values());
+        Scores.sort((m1, m2) -> 
+            (m2.GetMatchScore().get(0) + m2.GetMatchScore().get(1))
+            -
+            (m1.GetMatchScore().get(0) + m1.GetMatchScore().get(1))
+        );
 
         return Scores;
     }
