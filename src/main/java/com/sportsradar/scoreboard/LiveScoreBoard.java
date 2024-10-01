@@ -1,10 +1,11 @@
 package com.sportsradar.scoreboard;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Collections;
+import java.util.LinkedHashMap;
 
 public class LiveScoreBoard {
-    private HashMap<String, Match> LiveMatches = new HashMap<String, Match>();
+    private LinkedHashMap<String, Match> LiveMatches = new LinkedHashMap<String, Match>();
 
     public LiveScoreBoard() {
 
@@ -21,9 +22,11 @@ public class LiveScoreBoard {
 
     public ArrayList<Match> GetScores() {
         ArrayList<Match> Scores = new ArrayList<Match>();
-        //TODO: Implement functionality
-
         Scores.addAll(LiveMatches.values());
+
+        // Make the list sorted based on time added/initalized
+        Collections.reverse(Scores);
+        
         Scores.sort((m1, m2) -> 
             (m2.GetMatchScore().get(0) + m2.GetMatchScore().get(1))
             -
