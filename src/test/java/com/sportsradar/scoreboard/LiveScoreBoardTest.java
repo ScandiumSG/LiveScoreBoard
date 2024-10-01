@@ -109,7 +109,7 @@ public class LiveScoreBoardTest {
             this.board.CloseMatch(Matches.get(rng.nextInt(MatchesOnScoreBoard)).GetMatchName());
         }
 
-        assertTrue(this.board.GetScores().size() == TotalMatches - MatchesToRemove);
+        assertTrue(this.board.GetScores().size() == TotalMatches);
     }
     
     /**

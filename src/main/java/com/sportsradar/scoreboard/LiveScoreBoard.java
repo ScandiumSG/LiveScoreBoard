@@ -24,11 +24,10 @@ public class LiveScoreBoard {
         //TODO: Implement functionality
 
 
-
         return Scores;
     }
 
     public void CloseMatch(String HomeTeamName) {   
-        //TODO: Implement functionality
+        this.LiveMatches.remove(HomeTeamName);
     }
 }
