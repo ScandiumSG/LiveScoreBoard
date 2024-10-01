@@ -11,19 +11,20 @@ public class LiveScoreBoard {
     }
 
     public void InitiateMatch(String HomeTeam, String AwayTeam) {
-        //TODO: Implement functionality
+        Match newMatch = new Match(HomeTeam, AwayTeam);
+        this.LiveMatches.put(HomeTeam, newMatch);
     }
 
     public Match GetMatchByHomeTeamName(String HomeTeamName) {
-        //TODO: Implement functionality
-
-        return null;
+        return this.LiveMatches.get(HomeTeamName);
     }
 
     public ArrayList<Match> GetScores() {
         ArrayList<Match> Scores = new ArrayList<Match>();
         //TODO: Implement functionality
-        
+
+
+
         return Scores;
     }
 
