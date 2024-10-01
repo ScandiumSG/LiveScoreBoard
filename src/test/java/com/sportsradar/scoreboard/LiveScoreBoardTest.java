@@ -123,24 +123,20 @@ public class LiveScoreBoardTest {
         assertTrue(Matches.get(0).GetMatchScore().get(0) == 6);
         assertTrue(Matches.get(0).GetMatchScore().get(1) == 6);
 
-        assertTrue(Matches.get(0).GetMatchName() == "Spain");
-        assertTrue(Matches.get(0).GetMatchScore().get(0) == 10);
-        assertTrue(Matches.get(0).GetMatchScore().get(1) == 2);
+        assertTrue(Matches.get(1).GetMatchName() == "Spain");
+        assertTrue(Matches.get(1).GetMatchScore().get(0) == 10);
+        assertTrue(Matches.get(1).GetMatchScore().get(1) == 2);
 
-        assertTrue(Matches.get(0).GetMatchName() == "Mexico");
-        assertTrue(Matches.get(0).GetMatchScore().get(0) == 0);
-        assertTrue(Matches.get(0).GetMatchScore().get(1) == 5);
+        assertTrue(Matches.get(2).GetMatchName() == "Mexico");
+        assertTrue(Matches.get(2).GetMatchScore().get(0) == 0);
+        assertTrue(Matches.get(2).GetMatchScore().get(1) == 5);
 
-        assertTrue(Matches.get(0).GetMatchName() == "Argentina");
-        assertTrue(Matches.get(0).GetMatchScore().get(0) == 3);
-        assertTrue(Matches.get(0).GetMatchScore().get(1) == 1);
+        assertTrue(Matches.get(3).GetMatchName() == "Argentina");
+        assertTrue(Matches.get(3).GetMatchScore().get(0) == 3);
+        assertTrue(Matches.get(3).GetMatchScore().get(1) == 1);
 
-        assertTrue(Matches.get(0).GetMatchName() == "Germany");
-        assertTrue(Matches.get(0).GetMatchScore().get(0) == 6);
-        assertTrue(Matches.get(0).GetMatchScore().get(1) == 6);
-
-        assertTrue(Matches.get(0).GetMatchName() == "Uruguay");
-        assertTrue(Matches.get(0).GetMatchScore().get(0) == 6);
-        assertTrue(Matches.get(0).GetMatchScore().get(1) == 6);
+        assertTrue(Matches.get(4).GetMatchName() == "Germany");
+        assertTrue(Matches.get(4).GetMatchScore().get(0) == 2);
+        assertTrue(Matches.get(4).GetMatchScore().get(1) == 2);
     }
 }
