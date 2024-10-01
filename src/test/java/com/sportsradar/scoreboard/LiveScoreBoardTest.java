@@ -46,10 +46,10 @@ public class LiveScoreBoardTest {
         );
 
         this.board.GetMatchByHomeTeamName("Mexico").UpdateScore(0,5);
-        this.board.GetMatchByHomeTeamName("Spain").UpdateScore(0,5);
-        this.board.GetMatchByHomeTeamName("Germany").UpdateScore(0,5);
-        this.board.GetMatchByHomeTeamName("Uruguay").UpdateScore(0,5);
-        this.board.GetMatchByHomeTeamName("Argentina").UpdateScore(0,5);
+        this.board.GetMatchByHomeTeamName("Spain").UpdateScore(10,2);
+        this.board.GetMatchByHomeTeamName("Germany").UpdateScore(2,2);
+        this.board.GetMatchByHomeTeamName("Uruguay").UpdateScore(6,6);
+        this.board.GetMatchByHomeTeamName("Argentina").UpdateScore(3,1);
     }
 
     /**
